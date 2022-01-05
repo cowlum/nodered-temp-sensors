@@ -8,6 +8,349 @@
         "env": []
     },
     {
+        "id": "4662fdb48198dc23",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bd9fb21758f579ce",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "35ad4fe4.069a3",
+        "type": "subflow",
+        "name": "SaveChart",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 80,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "f4457c36.28ce1"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 820,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "cf553dbd.50f9a",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "10e78a89.5b4fd5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "0.0.0.0",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "61285987.c20328",
+        "type": "ui_group",
+        "name": "Main",
+        "tab": "e7c46d5e.a1283",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "e7c46d5e.a1283",
+        "type": "ui_tab",
+        "name": "Inside Weather",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4b5e4a803babd664",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 200,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "23dd114be920a660",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "8190dc9c67331fca",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "23dd114be920a660",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "7b4ec1b9be9c3e4f",
+        "type": "persist-store",
+        "filename": "persistence.json",
+        "interval": "60"
+    },
+    {
+        "id": "212b7f06.b4731",
+        "type": "ui_group",
+        "name": "Gauge",
+        "tab": "e7f7ff66.2de07",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e7f7ff66.2de07",
+        "type": "ui_tab",
+        "name": "Restore",
+        "icon": "dashboard"
+    },
+    {
+        "id": "db9cbd5c.fb547",
+        "type": "file",
+        "z": "35ad4fe4.069a3",
+        "name": "",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "x": 690,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f7f46486.9881a8",
+        "type": "file in",
+        "z": "35ad4fe4.069a3",
+        "name": "",
+        "filename": "",
+        "format": "utf8",
+        "sendError": true,
+        "allProps": false,
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "cf553dbd.50f9a"
+            ]
+        ]
+    },
+    {
+        "id": "ac2168dc.ee28f8",
+        "type": "json",
+        "z": "35ad4fe4.069a3",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 530,
+        "y": 40,
+        "wires": [
+            [
+                "db9cbd5c.fb547"
+            ]
+        ]
+    },
+    {
+        "id": "cf553dbd.50f9a",
+        "type": "json",
+        "z": "35ad4fe4.069a3",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 690,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4457c36.28ce1",
+        "type": "function",
+        "z": "35ad4fe4.069a3",
+        "name": "LoadSave",
+        "func": "var strSafe=msg.topic;\nif(strSafe)\n{\n    strSafe=strSafe.replace(/[^a-z0-9]/gi, '_').toLowerCase();\n    var loaded=context.get(strSafe)||0;\n    msg.filename =\"/home/pi/charts/\"+strSafe+\".dat\";\n    //node.warn(loaded);\n    if(0===loaded)\n    {\n        //load chart!! \n        msg.payload=\"load\";\n        context.set(strSafe,1);\n        \n        //node.warn(\"Loading \" +strSafe);\n    }\n    else\n    {\n        //node.warn(\"Writing \" +strSafe);\n    }\n    return msg;    \n}\nreturn null;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 60,
+        "wires": [
+            [
+                "99a5d40b.95d618"
+            ]
+        ]
+    },
+    {
+        "id": "99a5d40b.95d618",
+        "type": "switch",
+        "z": "35ad4fe4.069a3",
+        "name": "Load data",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "load",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "load",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "ac2168dc.ee28f8"
+            ],
+            [
+                "f7f46486.9881a8"
+            ]
+        ]
+    },
+    {
         "id": "9e58624.7faaba",
         "type": "mqtt out",
         "z": "46c6be2e6a046f32",
@@ -56,7 +399,7 @@
         "label": "Output",
         "tooltip": "",
         "group": "61285987.c20328",
-        "order": 10,
+        "order": 11,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -151,7 +494,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 150,
-        "y": 720,
+        "y": 760,
         "wires": [
             [
                 "650649f6d2c234d3",
@@ -170,11 +513,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 150,
-        "y": 680,
+        "x": 130,
+        "y": 700,
         "wires": []
     },
     {
@@ -220,7 +564,7 @@
         "type": "ui_text",
         "z": "46c6be2e6a046f32",
         "group": "61285987.c20328",
-        "order": 8,
+        "order": 9,
         "width": 0,
         "height": 0,
         "name": "",
@@ -237,7 +581,7 @@
         "type": "ui_text",
         "z": "46c6be2e6a046f32",
         "group": "61285987.c20328",
-        "order": 7,
+        "order": 8,
         "width": 0,
         "height": 0,
         "name": "",
@@ -350,14 +694,15 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 110,
-        "y": 460,
+        "x": 170,
+        "y": 600,
         "wires": [
             [
                 "bde1bdeb49aceb39",
                 "6a10f9a205be54f4",
                 "3e5d5008bdc04437",
-                "657828326ed8f0d8"
+                "657828326ed8f0d8",
+                "dd7e0743ce95221f"
             ]
         ]
     },
@@ -373,8 +718,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 110,
-        "y": 420,
+        "x": 170,
+        "y": 540,
         "wires": []
     },
     {
@@ -558,7 +903,7 @@
         "type": "ui_text",
         "z": "46c6be2e6a046f32",
         "group": "61285987.c20328",
-        "order": 9,
+        "order": 10,
         "width": 0,
         "height": 0,
         "name": "",
@@ -696,47 +1041,314 @@
         ]
     },
     {
-        "id": "10e78a89.5b4fd5",
-        "type": "mqtt-broker",
+        "id": "dd7e0743ce95221f",
+        "type": "smooth",
+        "z": "46c6be2e6a046f32",
+        "name": "Smooth mean",
+        "property": "payload",
+        "action": "mean",
+        "count": "288",
+        "round": "",
+        "mult": "single",
+        "reduce": false,
+        "x": 720,
+        "y": 640,
+        "wires": [
+            [
+                "9bd05cf3fa25c8aa"
+            ]
+        ]
+    },
+    {
+        "id": "9bd05cf3fa25c8aa",
+        "type": "delay",
+        "z": "46c6be2e6a046f32",
         "name": "",
-        "broker": "0.0.0.0",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": "",
-        "willMsg": {},
-        "sessionExpiry": ""
+        "pauseType": "rate",
+        "timeout": "1",
+        "timeoutUnits": "days",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "day",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 640,
+        "wires": [
+            [
+                "da76f1ff10f119cd"
+            ]
+        ]
     },
     {
-        "id": "61285987.c20328",
-        "type": "ui_group",
-        "name": "Main",
-        "tab": "e7c46d5e.a1283",
+        "id": "358d87f17befd136",
+        "type": "file",
+        "z": "46c6be2e6a046f32",
+        "name": "/home/pi/nodereddata/yearlytempdata",
+        "filename": "yearlytempdata",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1550,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da76f1ff10f119cd",
+        "type": "ui_chart",
+        "z": "46c6be2e6a046f32",
+        "name": "",
+        "group": "61285987.c20328",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "label": "Daily Average 52 Weeks",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1210,
+        "y": 640,
+        "wires": [
+            [
+                "358d87f17befd136",
+                "c7470e6b6224a985"
+            ]
+        ]
+    },
+    {
+        "id": "c7470e6b6224a985",
+        "type": "subflow:35ad4fe4.069a3",
+        "z": "46c6be2e6a046f32",
+        "name": "daily_average_save",
+        "x": 1460,
+        "y": 700,
+        "wires": [
+            [
+                "da76f1ff10f119cd"
+            ]
+        ]
+    },
+    {
+        "id": "4679091.0341ff8",
+        "type": "ui_button",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "group": "212b7f06.b4731",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "label": "Inject",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "63911393.d1513c"
+            ]
+        ]
+    },
+    {
+        "id": "fa4f25b6.ea4048",
+        "type": "ui_button",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "group": "212b7f06.b4731",
+        "order": 4,
+        "width": "2",
+        "height": "1",
+        "label": "restore",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "9b9cfb63.2f50f8"
+            ]
+        ]
+    },
+    {
+        "id": "63911393.d1513c",
+        "type": "random",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "low": "0",
+        "high": "10",
+        "inte": "true",
+        "x": 480,
+        "y": 160,
+        "wires": [
+            [
+                "9e4c2fd0.aac16"
+            ]
+        ]
+    },
+    {
+        "id": "9e4c2fd0.aac16",
+        "type": "ui_chart",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "group": "212b7f06.b4731",
         "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "bezier",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "outputs": 2,
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "ef3ff83b.aa5008"
+            ],
+            []
+        ]
     },
     {
-        "id": "e7c46d5e.a1283",
-        "type": "ui_tab",
-        "name": "Inside Weather",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
+        "id": "8f316ad0.85cdd8",
+        "type": "file",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "filename": "/tmp/chart.log",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 780,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b9cfb63.2f50f8",
+        "type": "file in",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "filename": "/tmp/chart.log",
+        "format": "utf8",
+        "x": 480,
+        "y": 460,
+        "wires": [
+            [
+                "b13ea0c3.a7955"
+            ]
+        ]
+    },
+    {
+        "id": "ef3ff83b.aa5008",
+        "type": "json",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "x": 770,
+        "y": 160,
+        "wires": [
+            [
+                "ef80c15e.8dbc3"
+            ]
+        ]
+    },
+    {
+        "id": "b13ea0c3.a7955",
+        "type": "json",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "9e4c2fd0.aac16"
+            ]
+        ]
+    },
+    {
+        "id": "ef80c15e.8dbc3",
+        "type": "function",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "func": "if (msg.topic === \"save\") {\n    msg.payload = context.last;\n    return msg;\n}\nelse {\n    context.last = msg.payload;\n}\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 320,
+        "wires": [
+            [
+                "8f316ad0.85cdd8"
+            ]
+        ]
+    },
+    {
+        "id": "87cc5e2e.b0836",
+        "type": "ui_button",
+        "z": "4662fdb48198dc23",
+        "name": "",
+        "group": "212b7f06.b4731",
+        "order": 3,
+        "width": "2",
+        "height": "1",
+        "label": "save",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "save",
+        "x": 330,
+        "y": 320,
+        "wires": [
+            [
+                "ef80c15e.8dbc3"
+            ]
+        ]
     }
 ]
